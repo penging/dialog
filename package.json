@@ -18,7 +18,7 @@
     "widget": "arale/widget/1.0.2/widget"
   },
   "output": {
-    "js/dislog.js": ".",
-    "css/dislog.css": "."
+    "js/dialog.js": ".",
+    "css/dialog.css": "."
   }
 }
