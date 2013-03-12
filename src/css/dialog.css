@@ -7,6 +7,7 @@
   background-color:rgba(0, 0, 0, 0);
   z-index:100;
   -webkit-transition:all 350ms ease;
+  transition:all 350ms ease;
 }
 
 .ui-dialog {
@@ -15,6 +16,5 @@
 }
 
 .ui-dialog-modal.active {
-  transition:all 350ms ease;
   background-color:rgba(0, 0, 0, .7);
 }
