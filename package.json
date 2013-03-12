@@ -1,24 +1,24 @@
 {
-  "name": "dialogs",
+  "name": "dialog",
   "version": "1.0.0",
   "root": "handy",
   "description": "基于移动设备的遮罩弹窗组件。",
   "tag": "widget",
   "author": "Denis <danxia.shidx@alipay.com>",
-  "homepage": "https://github.com/handyjs/dialogs",
+  "homepage": "https://github.com/handyjs/dialog",
   "repository": {
     "type": "git",
-    "url": "https://github.com/handyjs/dialogs"
+    "url": "https://github.com/handyjs/dialog"
   },
   "bugs": {
-    "url": "https://github.com/handyjs/dialogs/issues"
+    "url": "https://github.com/handyjs/dialog/issues"
   },
   "dependencies": {
     "$": "$",
-    "widget": "arale/widget/1.0.3/widget",
-    "detect": "handy/base/1.0.0/js/detect"
+    "widget": "arale/widget/1.0.2/widget"
   },
   "output": {
-    "js/dislogs.js": "."
+    "js/dislog.js": ".",
+    "css/dislog.css": "."
   }
 }
