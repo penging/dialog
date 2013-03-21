@@ -5,7 +5,7 @@ define(function (require, exports, module) {
   var modal = $('<div class="ui-dialog-modal">').html('<div class="ui-dialog"></div>');
   var dialog = $('>div', modal);
   //防止点击穿透
-  modal.on('click', false);
+  modal.on('click touchstart', false);
   dialog.on('click', function (e) {
     e.stopPropagation();
   });
@@ -34,7 +34,7 @@ define(function (require, exports, module) {
         } else if (that.parent.length) {
           that.parent.prepend(that.element);
         }
-        modal.off('click.dialog').remove();
+        modal.remove();
       }).removeClass('active');
     },
     _refreshRender: function () {
