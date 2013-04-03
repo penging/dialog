@@ -12,6 +12,8 @@
 
 .ui-dialog {
   position:fixed;
+  left:50%;
+  top:50%;
   margin:0 auto;
 }
 

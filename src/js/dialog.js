@@ -18,12 +18,17 @@ define(function (require, exports, module) {
       }
     },
     show: function () {
-      $(window).on('resize.dialog', this._refreshRender);
+      //$(window).on('resize.dialog', this._refreshRender);
       dialog.append(this.element.show());
-      modal.appendTo('body');
       this._refreshRender();
+      modal.appendTo('body');
       getComputedStyle(modal[0]).background;
       modal.addClass('active');
+      dialog.css({
+        'marginTop': (-dialog.height() / 2) + 'px',
+        'marginLeft': (-dialog.width() / 2) + 'px'
+      });
+
     },
     hide: function () {
       var that = this;
@@ -39,10 +44,6 @@ define(function (require, exports, module) {
     },
     _refreshRender: function () {
       modal.height($(document).height());
-      dialog.css({
-        'top': (window.innerHeight - dialog.height()) / 2 + 'px',
-        'left': (window.innerWidth - dialog.width()) / 2 + 'px'
-      });
     }
   });
   return Dialog;
